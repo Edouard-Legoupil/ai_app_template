@@ -1,0 +1,62 @@
+name: AI Process Automation Functional Specification
+description: >
+  This template defines a structured process for designing, executing, and documenting automated AI workflows, intended for model-driven ("vibe coding") code generation and auditability.
+sections:
+  - name: Executive Summary
+    instructions: |
+      Summarize the scope, business objective, and expected outcomes of the automation. Highlight stakeholders and key success metrics.
+  - name: Decision Points
+    instructions: |
+      For each major decision node:
+        - Detail where human judgment, approval, or conditional review is required. 
+        - Clearly specify the types of decisions, criteria, allowable values, and associated roles or titles authorized to make decisions.
+        - Example schema:
+            - decision_id: unique identifier
+            - question: clear phrasing for the human/committee
+            - options:
+                - option: string
+                  pros: string
+                  cons: string
+                  risks: string
+            - supporting_docs: List with references to context docs
+        - Output a JSON or YAML block for each decision point so it is parseable by downstream systems or an AI agent.
+  - name: Document Context and Memory
+    instructions: |
+      List/describe all documents, records, conversation logs, contracts, or other artifacts that form the AI process’s memory.
+      For each doc:
+        - Specify document_id, effective date, owner, confidentiality classification, and relevance to current process node.
+        - Example output:
+            - doc_id: string
+            - title: string
+            - type: [contract, log, policy, etc.]
+            - referenced_in: [list process node/decision ids]
+            - file_link: (URL if available)
+  - name: Path Tracking
+    instructions: |
+      Draw or enumerate the map of possible process paths created, updated, or destroyed during automation.
+      - Each path should reference upstream decisions, state changes, and resulting downstream actions.
+      - Model as ordered/graph-style list of nodes: node_id, condition/criteria, next_nodes, if/else.
+      - Include intended logic for alternative paths, failure/validation, or rollbacks.
+      - Where possible, output in YAML or JSON-compatible format.
+  - name: Action Updates (Execution and State Change)
+    instructions: |
+      For each major execution point or post-decision action:
+        - Describe what operational state changes, what records are updated, who owns/executes the action, and consequences for process.
+        - Specify external system calls, dependencies, or transaction boundaries.
+        - Include code comments or metatags where model interpretation for vibe coding is desired.
+        - Example output:
+            - action_id: string
+            - description: clear summary
+            - trigger: reference to process node/decision
+            - upstream_state: state vars before
+            - downstream_state: state vars after
+            - code_hint: comment/metatag for code generation
+  - name: Functional Specification for Vibe Coding
+    instructions: |
+      Write a plain-language functional specification detailing:
+        - Inputs and expected formats.
+        - Outputs and required guarantees.
+        - Error handling and edge cases.
+        - Explicit model/agent behaviors, data flows, and audit requirements.
+        - Example snippet, rules, test cases, or validation criteria phrased as a model-interpretable specification.
+      Ensure the spec is both human-readable and suitable for direct ingestion by a code-generating model.

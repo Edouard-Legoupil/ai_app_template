@@ -205,3 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+backend/__pycache__
+backend/src/__pycache__
+backend/src/api/__pycache__
+backend/src/agents/crew/__pycache__
+backend/src/api/v1/__pycache__
+backend/src/api/v1/agents/__pycache__
+frontend/node_modules
+uvicorn.log
