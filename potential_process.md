@@ -63,7 +63,7 @@
 
  * **Path Tracking**: How captured lessons change future decision-making patterns
 
- * **Action Updates**: Natural language processing across 50+ years of UN **Documents**
+ * **Action Updates**: Natural language processing across 50+ years of UN Documents
 
 ### Best Practice Identification & Scaling
 
@@ -106,8 +106,6 @@
  * **Path Tracking**: "If we deploy X troops vs. Y aid workers" implications for security, access, perception
 
  * **Action Updates** Potential: 70% of information gathering, 30% of decision presentation
-
- * Example: Sudan famine response – system presents options based on 2011 Somalia lessons learned
 
 ### Refugee Camp Resource Optimization
 
