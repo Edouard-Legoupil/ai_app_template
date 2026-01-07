@@ -161,6 +161,7 @@ Rather than presenting users with raw data or complex AI parameters, or a chat i
 
 The main workspace is a vertical stack of panels, each representing a different aspect of the user's work:
 
+```
  * Knowledge Dashboard (when curating organizational intelligence)
 
      ↓
@@ -174,6 +175,7 @@ The main workspace is a vertical stack of panels, each representing a different 
 
      ↓
  * Reflection Interface (when learning)
+```
 
 In addition, a permanent "context bar", always visible as a sidebar panel, provides situational awareness and teams feedback.
 
@@ -232,6 +234,7 @@ Such mandatory reflection at project end allows for AI synthesis across projects
 
 By embedding these interaction patterns, the boilerplate ensures the AI system's backend capabilities are accessed through intuitive, human-centric metaphors. 
 
+```
 ┌─────────────────────────────────────────────────────────────┐
 │ 1. DOCUMENTS → KNOWLEDGE CARDS (Continuous Background)      │
 │    • AI synthesizes new documents into knowledge drafts     │
@@ -269,6 +272,7 @@ By embedding these interaction patterns, the boilerplate ensures the AI system's
 │ 11. AI SYNTHESIZES ORGANIZATIONAL LEARNING                  │
 │    (Improves future instances AND Knowledge Cards)          │
 └─────────────────────────────────────────────────────────────┘
+```
 
 This mainstreams AI interaction, reducing training overhead and resistance, and ensuring the technology truly amplifies human judgment rather than complicating it. 
 
