@@ -378,70 +378,133 @@ The output from the demo app presented in this boilerplate will help you to refi
 
 It will provide you with detailled functional description that you will be then able to use to adapt this boilerplate to your own needs. 
 
-The Customization Model is based on the 3 Layers below:
+The Customization Model is based on the 4 Layers below:
 
- * LAYER 3: PROCESS-SPECIFIC
-    * Custom forms & questions
-    * Domain-specific AI prompts
-    * Domain-specific integrations
+**LAYER 4: PROCESS-SPECIFIC**
 
- * LAYER 2: PROCESS TEMPLATES
-    * Decision point types
-    * Document templates
-    * Collaboration rules
+* Custom forms & questions
 
- * LAYER 1: CORE BOILERPLATE
-    * AI orchestration engine
-    * Decision tracking system
-    * UI components & patterns
-    * Learning feedback loop
+* Domain-specific AI prompts
+
+* Domain-specific integrations
+
+* Industry-specific Knowledge Card taxonomies
+
+* Process-specific knowledge validation workflows
+
+**LAYER 3: KNOWLEDGE DOMAIN**
+    
+* Knowledge Card templates for your domain
+
+* Document-to-knowledge extraction rules
+
+* Expert validation workflows
+
+* Knowledge conflict resolution protocols
+
+* Domain-specific knowledge relationships
+
+**LAYER 2: PROCESS TEMPLATES**
+
+* Decision point types
+
+* Document templates
+
+* Collaboration rules
+
+* Knowledge application rules
+
+* Knowledge-informed ripple mapping
+
+**LAYER 1: CORE BOILERPLATE**
+
+* AI orchestration engine
+
+* Decision tracking system
+
+* UI components & patterns
+
+* Learning feedback loop
+
+* Knowledge curation engine
+
+* Knowledge Card registry
+
+* Context assembly system
+
 
 The steps to adapt this boilerplate to your own needs are:
 
-  1. Create process type definition (/config/process_type.yaml)
+  1. Define Your Knowledge Taxonomy (/config/knowledge/taxonomy.yaml)
 
-  2. Design the initiation form (/config/forms/[type].yaml)
+  2. Configure Document-to-Knowledge Rules (/config/knowledge/extraction_rules.yaml)
 
-  3. Write domain-specific AI prompts (/config/ai_prompts/[type].py)
+  3. Set Up Knowledge Stewardship (/config/knowledge/stewardship.yaml)
+  
+  4. Create process type definition (/config/process_type.yaml)
 
-  4. Define decision points (/config/decisions/[type].yaml)
+  5. Design the initiation form (/config/forms/[type].yaml)
 
-  5. Create document templates (/config/documents/[type].jinja2)
+  6. Write domain-specific AI prompts (/config/ai_prompts/[type].py)
 
-  6. Configure ripple effects (/config/ripples/[type].py)
+  7. Define decision points (/config/decisions/[type].yaml)
 
-  7. Set up integrations (/config/integrations/[type].yaml)
+  8. Create document templates (/config/documents/[type].jinja2)
 
-  8. Define learning questions (/config/learning/[type].yaml)
+  9. Configure ripple effects (/config/ripples/[type].py)
 
-  9. Customize UI (/config/ui/[type].json)
+  10. Set up integrations (/config/integrations/[type].yaml)
+
+  11. Define learning questions (/config/learning/[type].yaml)
+
+  12. Customize UI (/config/ui/[type].json)
 
 
 What You DON'T Need to Do:
 
-    ❌ Build AI orchestration engine (already in boilerplate)
+❌ Build the Knowledge Curation Engine (already in boilerplate)
 
-    ❌ Create decision tracking system (already built)
+❌ Create the Knowledge Card Registry (already built)
 
-    ❌ Design collaboration patterns (already provided)
+❌ Design Knowledge Validation Workflows (already provided)
 
-    ❌ Implement learning feedback loops (already included)
+❌ Implement Knowledge Conflict Detection (already included)
 
-    ❌ Build core UI components (already there)
+❌ Build Knowledge-Aware UI Components (already there)
+
+❌ Create Context Assembly System (already implemented)
+
+❌ Design Organizational Memory Infrastructure (already architected)
 
 What You DO Need to Do:
 
-    ✅ Define YOUR process's specific questions
+✅ Define YOUR knowledge domains and taxonomies
 
-    ✅ Configure YOUR domain's decision points
+✅ Configure YOUR document-to-knowledge extraction rules
 
-    ✅ Connect to YOUR systems
+✅ Assign YOUR knowledge stewards and validation workflows
 
-    ✅ Use YOUR industry's terminology
+✅ Map YOUR process-specific knowledge requirements
 
-    ✅ Set YOUR risk thresholds and compliance rules
+✅ Create YOUR industry's Knowledge Card templates
 
-The boilerplate provides the engine. You provide the domain knowledge. 
+✅ Set YOUR knowledge confidence thresholds and expiration policies
+
+✅ Define YOUR knowledge application and conflict resolution rules
+
+✅ Connect to YOUR document repositories for knowledge sourcing
+
+✅ Customize YOUR knowledge-aware user interfaces
+
+The boilerplate provides the engine. You provide the domain knowledge.  You're not just configuring another automation tool. You're establishing your organization's intelligence infrastructure. The goal isn't to have perfect knowledge from day one. It's to establish a system that improves organizational intelligence continuously. Every process you automate becomes both a consumer and a producer of validated knowledge, creating a virtuous cycle of organizational learning and improvement.
+
+Define your knowledge domains and assign stewards -> 
+ Configure document ingestion and Knowledge Card templates -> 
+    Map your first process with knowledge requirements-> 
+       Launch your first knowledge-aware automation process -> 
+          See patterns in knowledge usage and gaps -> 
+             Refine Knowledge Cards based on real application -> 
+               Operate with a mature organizational intelligence base
 
 For customisation, you may use a cli tool like [opencode](https://opencode.ai/) or [gemini-cli](https://geminicli.com/), [claude-code](https://claude.com/product/claude-code) or [Qwen-code](https://qwenlm.github.io/qwen-code-docs/en/users/overview/) to start vibecoding within the forked and cloned repository.
 
